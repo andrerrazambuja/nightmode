@@ -1,0 +1,57 @@
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body > .day{
+    background-color: #ffffff;
+    color: #464646;
+}
+
+body > .night{
+    background-color: #292828;
+    color: #ffffff;
+}
+
+#content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1,2em;
+    font-weight: 700;
+}
+
+button{
+    margin-top: 2em;
+    outline: 0;
+    border: 0;
+    width: 5em;
+    height: 2.5em;
+    border-radius: 20px;
+}
+
+#btnDay{
+    background-color: #adadad86;
+}
+
+#btnNight{
+    background-color: #ddddddd2;    
+}
+
+.hide{
+    display: none;
+}
+
+.switch{
+    transition: .5s;
+}
