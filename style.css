@@ -8,12 +8,12 @@ body {
   padding: 0;
 }
 
-body > .day {
+body.day {
   background-color: #ffffff;
   color: #464646;
 }
 
-body > .night {
+body.night {
   background-color: #292828;
   color: #ffffff;
 }
