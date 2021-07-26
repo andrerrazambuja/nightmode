@@ -1,57 +1,60 @@
-
-
-html{
-    font-family: 'Roboto', sans-serif;
-    color: white;
+html {
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body > .day{
-    background-color: #ffffff;
-    color: #464646;
+body > .day {
+  background-color: #ffffff;
+  color: #464646;
 }
 
-body > .night{
-    background-color: #292828;
-    color: #ffffff;
+body > .night {
+  background-color: #292828;
+  color: #ffffff;
 }
 
-#content{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1,2em;
-    font-weight: 700;
+#content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1, 2em;
+  font-weight: 700;
 }
 
-button{
-    margin-top: 2em;
-    outline: 0;
-    border: 0;
-    width: 5em;
-    height: 2.5em;
-    border-radius: 20px;
+.switch {
+  transition: 0.5s;
 }
 
-#btnDay{
-    background-color: #adadad86;
+button {
+  margin-top: 2em;
+  outline: 0;
+  border: 0;
+  width: 5em;
+  height: 2.5em;
+  border-radius: 20px;
 }
 
-#btnNight{
-    background-color: #ddddddd2;    
+button.day {
+  background-color: #acacacdc;
 }
 
-.hide{
-    display: none;
+button.night {
+  background-color: #dddddda2;
+  color: rgb(212, 212, 212);
 }
 
-.switch{
-    transition: .5s;
+button.day > i.fa-moon {
+  display: none;
+}
+
+button.night > i.fa-sun {
+  display: none;
 }
