@@ -10,5 +10,5 @@ const changeMode = () => {
   elements.forEach((element) => {
     element.classList.toggle("day")
     element.classList.toggle("night")
-  });
-};
+  })
+}
