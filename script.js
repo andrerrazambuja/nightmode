@@ -1,12 +1,15 @@
+const elements = document.querySelectorAll('.switch');
+const btnDay = document.getElementById("btnDay")
+const btnNight = document.getElementById("btnNight")
+
 const action = () => {
 
-  let elements = document.querySelectorAll('.switch');
   elements.forEach( element =>{
     element.classList.toggle('day')
     element.classList.toggle('night')
   })
  
-  let btnDay = document.getElementById("btnDay").classList.toggle('hide');
-  let btnNight = document.getElementById("btnNight").classList.toggle('hide');
+  btnDay.classList.toggle('hide');
+  btnNight.classList.toggle('hide');
 
 }
