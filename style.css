@@ -1,11 +1,11 @@
 html {
   font-family: "Roboto", sans-serif;
-  color: white;
 }
 
 body {
   margin: 0;
   padding: 0;
+  transition: 0.5s;
 }
 
 body.day {
@@ -26,16 +26,14 @@ body.night {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  font-size: 1, 2em;
+  font-size: 1,2em;
   font-weight: 700;
+  transition: 0.5s;
+  cursor: default;
 }
 
 p{
     margin: 1em;
-}
-
-.switch {
-  transition: 0.5s;
 }
 
 button {
@@ -45,6 +43,11 @@ button {
   width: 5em;
   height: 2.5em;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(1.05);
 }
 
 button.day {
@@ -56,10 +59,6 @@ button.night {
   color: rgb(212, 212, 212);
 }
 
-button.day > i.fa-moon {
-  display: none;
-}
-
-button.night > i.fa-sun {
+button.day > i.fa-moon, button.night > i.fa-sun {
   display: none;
 }
